@@ -28,21 +28,21 @@
 
         for(var i = 99; i >= 0 ; i--) {
             var option = document.createElement("option");
-            option.innerHTML = i > 10 ? i : "0" + i;
+            option.innerHTML = i >= 10 ? i : "0" + i;
             selHour.add(option, 0);
         }
         selHour.options[0].selected = true;
         
         for(var i = 60; i >= 0 ; i--) {
             var option = document.createElement("option");
-            option.innerHTML = i > 10 ? i : "0" + i;
+            option.innerHTML = i >= 10 ? i : "0" + i;
             selMinute.add(option, 0);
         }
         selMinute.options[0].selected = true;
         
         for(var i = 60; i >= 0 ; i--) {
             var option = document.createElement("option");
-            option.innerHTML = i > 10 ? i : "0" + i;
+            option.innerHTML = i >= 10 ? i : "0" + i;
             selSecond.add(option, 0);
         }
         selSecond.options[0].selected = true;
